@@ -58,13 +58,13 @@ The model performance was evaluated using standard COCO segmentation metrics:
 ### Annotated Dataset Sample
 Example of the initial ground-truth labeling for Black Screws and generic Screws.
 
-<img width="420" height="420" alt="image" src="https://github.com/user-attachments/assets/39b337bf-1bd0-4a74-a014-bc1787e0cef6" />
+<img width="420" height="420" alt="image" src="assets\annotated.png" />
 
 ### Predicted & Classified Output
 
 Final inference result: The model detects the screws, and the script classifies them into Short, Long, and Black categories.
 
-<img width="420" height="420" alt="image" src="https://github.com/user-attachments/assets/e9cb14b0-868f-412f-a6af-ee6f62b3336f" />
+<img width="420" height="420" alt="image" src="assets\predicted.png" />
 
 
 <b> Short screws: 22 </br>
