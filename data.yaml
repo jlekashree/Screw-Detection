@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['Screw', 'black screw']
+
+roboflow:
+  workspace: screw-juspl
+  project: screw-data
+  version: 7
+  license: Private
+  url: https://app.roboflow.com/screw-juspl/screw-data/7
