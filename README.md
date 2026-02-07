@@ -72,4 +72,19 @@ Final inference result: The model detects the screws, and the script classifies 
 <b> Black screws: 27 </br>
 <b> TOTAL screws: 89 
 
+---
+
+# To Run:
+Three main scripts to run:
+- `trainer.py` → Ttrain the YOLOv8n-seg model  
+- `inference.py` → To run inference and visualize predictions  
+- `evaluation.py` → To evaluate model performance (mAP, precision, recall)  
+
+
+
+# Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
 
