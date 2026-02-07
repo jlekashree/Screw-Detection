@@ -102,5 +102,7 @@ def annotate_image(image, masks, classes, lengths, length_threshold):
                     font, 0.5, color, 2)
 
     return annotated
-for file_path in os.listdir("test"):
-  predict(file_path = file_path , conf=0.25)
+
+if __name__ == '__main__':
+  for file_path in os.listdir("test"):
+    predict(file_path = os.path.join('test',file_path) , conf=0.25)
