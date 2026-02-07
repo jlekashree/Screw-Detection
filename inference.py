@@ -2,6 +2,7 @@ from sklearn.cluster import KMeans
 import cv2
 import numpy as np
 from ultralytics import YOLO
+import os
 
 TRAINED_MODEL_PATH = "runs/segment/train/weights/best.pt"
 model = YOLO(TRAINED_MODEL_PATH)
@@ -101,5 +102,5 @@ def annotate_image(image, masks, classes, lengths, length_threshold):
                     font, 0.5, color, 2)
 
     return annotated
-
-predict(file_path = "test/1.png", conf=0.25)
+for file_path in os.listdir("test"):
+  predict(file_path = file_path , conf=0.25)
