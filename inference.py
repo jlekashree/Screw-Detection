@@ -7,8 +7,8 @@ import os
 TRAINED_MODEL_PATH = "runs/segment/train/weights/best.pt"
 model = YOLO(TRAINED_MODEL_PATH)
 
-def predict(file_path: str, conf=0.25):
-  results = model(file_path, conf=conf)
+def predict(file_path: str, iou, conf=0.25):
+  results = model(file_path, conf=conf, iou=iou)
   results = list(results)
 
   lengths = []
@@ -105,4 +105,4 @@ def annotate_image(image, masks, classes, lengths, length_threshold):
 
 if __name__ == '__main__':
   for file_path in os.listdir("test"):
-    predict(file_path = os.path.join('test',file_path) , conf=0.25)
+    predict(file_path = os.path.join('test',file_path), iou=0.65, conf=0.25)
